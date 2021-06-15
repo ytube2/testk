@@ -21,7 +21,7 @@ commonname=EMBEX.ONLINE
 email=ADMIN@EMBEX.ONLINE
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/contong1/testk/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/jhall031/testk/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -93,15 +93,15 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/contong1/testk/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/jhall031/testk/main/nginx.conf"
 mkdir -p /home/vps/public_html
 echo "<pre>Setup by KEVIN DONI</pre>" > /home/vps/public_html/index.html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/contong1/testk/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/jhall031/testk/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://github.com//contong1/testk/raw/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://github.com/jhall031/testk/raw/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -125,7 +125,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/contong1/testk/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/jhall031/testk/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -180,7 +180,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #OpenVPN
-wget https://raw.githubusercontent.com//contong1/testk/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/jhall031/testk/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -217,13 +217,13 @@ cd
 apt install -y libxml-parser-perl
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com//contong1/testk/main/bannerssh.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/jhall031/testk/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/contong1/testk/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
-wget https://raw.githubusercontent.com/contong1/testk/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/jhall031/testkjhall031/testk/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/jhall031/testkjhall031/testk/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -244,25 +244,25 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/contong1/testk/main/addhost.sh"
-wget -O about "https://raw.githubusercontent.com/contong1/testk/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/contong1/testk/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/contong1/testk/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/contong1/testk/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/contong1/testk/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/contong1/testk/main/member.sh"
-wget -o webmin "https://raw.githubusercontent.com/contong1/testk/main/webmin.sh"
-wget -O delete "https://raw.githubusercontent.com/contong1/testk/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/contong1/testk/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/contong1/testk/main/restart.sh"
-wget -O speedtest "https://github.com/contong1/testk/raw/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/contong1/testk/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/contong1/testk/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/contong1/testk/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/contong1/testk/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/contong1/testk/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/contong1/testk/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com//contong1/testk/main/clear-log.sh"
+wget -O add-host "https://raw.githubusercontent.com/jhall031/testk/main/addhost.sh"
+wget -O about "https://raw.githubusercontent.com/jhall031/testk/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/jhall031/testk/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/jhall031/testk/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/jhall031/testk/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/jhall031/testk/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/jhall031/testk/main/member.sh"
+wget -o webmin "https://raw.githubusercontent.com/jhall031/testk/main/webmin.sh"
+wget -O delete "https://raw.githubusercontent.com/jhall031/testk/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/jhall031/testk/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/jhall031/testk/main/restart.sh"
+wget -O speedtest "https://github.com/jhall031/testk/raw/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/jhall031/testk/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/jhall031/testk/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/jhall031/testk/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/jhall031/testk/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/jhall031/testk/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/jhall031/testk/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/jhall031/testk/main/clear-log.sh"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
