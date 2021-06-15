@@ -279,14 +279,14 @@ mkdir -p /run/pluto
 service fail2ban restart 2>/dev/null
 service ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
-wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/addl2tp.sh && chmod +x /usr/bin/addl2tp
-wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/dell2tp.sh && chmod +x /usr/bin/dell2tp
-wget -O /usr/bin/xp-l2tp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/xp-l2tp.sh && chmod +x /usr/bin/xp-l2tp
-wget -O /usr/bin/addpptp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/addpptp.sh && chmod +x /usr/bin/addpptp
-wget -O /usr/bin/delpptp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/delpptp.sh && chmod +x /usr/bin/delpptp
-wget -O /usr/bin/xp-pptp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/xp-pptp.sh && chmod +x /usr/bin/xp-pptp
-wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/renewpptp.sh && chmod +x /usr/bin/renewpptp
-wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
+wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/jhall031/testk/main/addl2tp.sh && chmod +x /usr/bin/addl2tp
+wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/jhall031/testk/main/dell2tp.sh && chmod +x /usr/bin/dell2tp
+wget -O /usr/bin/xp-l2tp https://raw.githubusercontent.com/jhall031/testk/main/xp-l2tp.sh && chmod +x /usr/bin/xp-l2tp
+wget -O /usr/bin/addpptp https://raw.githubusercontent.com/jhall031/testk/main/addpptp.sh && chmod +x /usr/bin/addpptp
+wget -O /usr/bin/delpptp https://raw.githubusercontent.com/jhall031/testk/main/delpptp.sh && chmod +x /usr/bin/delpptp
+wget -O /usr/bin/xp-pptp https://raw.githubusercontent.com/jhall031/testk/main/xp-pptp.sh && chmod +x /usr/bin/xp-pptp
+wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/jhall031/testk/main/renewpptp.sh && chmod +x /usr/bin/renewpptp
+wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/jhall031/testk/main/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
 touch /var/lib/premium-script/data-user-l2tp
 touch /var/lib/premium-script/data-user-pptp
 rm -f /root/ipsec.sh
