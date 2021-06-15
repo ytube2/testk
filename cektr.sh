@@ -29,5 +29,5 @@ echo "$jum2";
 echo "-------------------------------"
 fi
 done
-echo "By KEVIN DONI"
+echo "By dKusya"
 
