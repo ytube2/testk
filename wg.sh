@@ -89,11 +89,11 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O addwg "https://raw.githubusercontent.com/contong1/testk/main/addwg.sh"
-wget -O delwg "https://raw.githubusercontent.com/contong1/testk/main/delwg.sh"
-wget -O cekwg "https://raw.githubusercontent.com/contong1/testk/main/cekwg.sh"
-wget -O xp-wg "https://raw.githubusercontent.com/contong1/testk/main/xp-wg.sh"
-wget -O renewwg "https://raw.githubusercontent.com/contong1/testk/main/renewwg.sh"
+wget -O addwg "https://raw.githubusercontent.com/jhall031/testk/main/addwg.sh"
+wget -O delwg "https://raw.githubusercontent.com/jhall031/testk/main/delwg.sh"
+wget -O cekwg "https://raw.githubusercontent.com/jhall031/testk/main/cekwg.sh"
+wget -O xp-wg "https://raw.githubusercontent.com/jhall031/testk/main/xp-wg.sh"
+wget -O renewwg "https://raw.githubusercontent.com/jhall031/testk/main/renewwg.sh"
 chmod +x addwg
 chmod +x delwg
 chmod +x cekwg
