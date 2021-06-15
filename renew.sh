@@ -1,10 +1,10 @@
 #!/bin/bash
-# Script by : KEVIN DONI
+# Script by : dKusya
 clear
 echo -e ""
 echo -e "======================================"
 echo -e ""
-echo -e "       AutoScriptVPS by KEVIN DONI    "
+echo -e "       AutoScriptVPS by dKusya    "
 echo -e ""
 echo -e "======================================"
 read -p "         Username       :  " User
@@ -24,7 +24,7 @@ clear
 echo -e ""
 echo -e "========================================"
 echo -e ""
-echo -e "    AutoScriptVPS by KEVIN DONI         "
+echo -e "    AutoScriptVPS by dKusya         "
 echo -e ""
 echo -e "    Username        :  $User"
 echo -e "    Days Added      :  $Days Days"
@@ -36,7 +36,7 @@ clear
 echo -e ""
 echo -e "========================================"
 echo -e ""
-echo -e "      AutoScriptVPS by KEVIN DONI       "
+echo -e "      AutoScriptVPS by dKusya       "
 echo -e ""
 echo -e "        Username Doesnt Exist           "
 echo -e ""
