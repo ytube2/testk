@@ -1,7 +1,7 @@
 #!/bin/bash
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/contong1/testk/main/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/jhall031/testk/main/rclone.conf"
 apt install msmtp-mta ca-certificates bsd-mailx -y
 cat<<EOF>>/etc/msmtprc
 defaults
@@ -20,11 +20,11 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/contong1/testk/main/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/contong1/testk/main/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/contong1/testk/main/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/contong1/testk/main/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/contong1/testk/main/strt.sh"
+wget -O autobackup "https://raw.githubusercontent.com/jhall031/testk/main/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/jhall031/testk/main/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/jhall031/testk/main/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/jhall031/testk/main/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/jhall031/testk/main/strt.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x bckp
