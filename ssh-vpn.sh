@@ -262,6 +262,7 @@ wget -O renew "https://raw.githubusercontent.com/jhall031/testk/main/renew.sh"
 wget -O autokill "https://raw.githubusercontent.com/jhall031/testk/main/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/jhall031/testk/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/jhall031/testk/main/tendang.sh"
+wget -O updatek "https://raw.githubusercontent.com/jhall031/testk/main/updatek.sh"
 wget -O clear-log "https://raw.githubusercontent.com/jhall031/testk/main/clear-log.sh"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
@@ -284,6 +285,7 @@ chmod +x tendang
 chmod +x ceklim
 chmod +x ram
 chmod +x renew
+chmod +x updatek
 chmod +x clear-log
 
 # remove unnecessary files
