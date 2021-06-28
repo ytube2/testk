@@ -72,6 +72,7 @@ echo -e "* ram          : Cek Penggunaan ram VPS"
 echo -e "* reboot       : Reboot VPS"
 echo -e "* speedtest    : Tes kecepatan VPS"
 echo -e "* info         : Informasi"
+echo -e "* updatek : Update script
 echo -e "* about        : Informasi script autossh"
 echo -e ""
 echo -e "==============================================================="
