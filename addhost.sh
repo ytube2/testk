@@ -2,9 +2,9 @@
 apt install jq curl -y
 DOMAIN=gegara.ml
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=$enak.gegara.ml
-CF_ID=ed.u.saya.8@gmail.com
-CF_KEY=7526bfc3f55dc5b04c3dd566960adcf26c9c5
+SUB_DOMAIN=${sub}.syng.cf
+CF_ID=syngml343@gmail.com
+CF_KEY=8fb749c5138f040814d1f43254497e77c247f
 set -euo pipefail
 IP=$(wget -qO- enak.gegara.ml);
 echo "Updating DNS for ${SUB_DOMAIN}..."
