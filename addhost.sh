@@ -1,6 +1,6 @@
 #!/bin/bash
 apt install jq curl -y
-DOMAIN=gegara.ml
+DOMAIN=syng.cf
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.syng.cf
 CF_ID=syngml343@gmail.com
