@@ -11,7 +11,7 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- enak.gegara.ml);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/jhall031/testk/main/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/ytube2/testk/main/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
